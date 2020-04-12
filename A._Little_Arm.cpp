@@ -5,14 +5,26 @@ using namespace std;
 #define pb push_back
 //INPUT OUTPUT START
 #define in freopen("input.txt","r",stdin);
-#define out freopen("output.txt","w",stdout);
+#define out freopen("output3.txt","w",stdout);
 #define harsh in out
 
 int main(){
 	#ifndef ONLINE_JUDGE
 	harsh
 	#endif
-	int x;
-	cin>>x;
-	cout<<x;	
+	int t;
+	cin>>t;
+	char c[] = {'B','W'};
+	while(t--)
+	{
+		int n,m,j=0,k=0;
+		cin>>n>>m;
+		for(int i=0;i<n;i++)
+		{
+			cout<<'W';
+			while(j<m-1)
+				{cout<<'B';j++;}
+			cout<<endl;
+		}
+	}
 }
